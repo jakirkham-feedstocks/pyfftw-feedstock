@@ -5,7 +5,7 @@ Home: http://hgomersall.github.com/pyFFTW/
 
 Package license: BSD or GPL 2
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: A pythonic wrapper around FFTW, the FFT library, presenting a unified interface for all the supported transforms.
 
@@ -72,6 +72,11 @@ Current build status
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyfftw-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyfftw-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyfftw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyfftw-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyfftw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyfftw-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyfftw/badges/version.svg)](https://anaconda.org/conda-forge/pyfftw)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pyfftw/badges/downloads.svg)](https://anaconda.org/conda-forge/pyfftw)
 
 
 Updating pyfftw-feedstock
