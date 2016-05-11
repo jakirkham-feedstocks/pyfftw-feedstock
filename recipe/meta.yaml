@@ -8,6 +8,8 @@ source:
     fn: pyFFTW-{{ version }}.tar.gz
     url: https://pypi.python.org/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
     md5: dab57de9d23f3b333115265914f3d240
+    patches:
+        - setup.patch
 
 build:
   number: 0
@@ -30,6 +32,12 @@ test:
         - pyfftw
         - pyfftw.builders
         - pyfftw.interfaces
+    commands:
+        # the following test will fail if MKL FFT routines are being linked to
+        # instead of the FFTW ones.  (MKL doesn't support FFT of only 1
+        # dimension of a 3D array).
+        # see:  https://github.com/pyFFTW/pyFFTW/issues/40
+        - python -c "import numpy as np; from pyfftw.interfaces.numpy_fft import fftn; r = np.random.randn(32, 32, 32); fftn(r, axes=(0, ))"
 
 about:
     home: http://hgomersall.github.com/pyFFTW/
