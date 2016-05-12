@@ -10,7 +10,7 @@
  def get_package_data():
      from pkg_resources import get_build_platform
  
-@@ -121,8 +124,29 @@
+@@ -121,8 +124,27 @@
          
          have_cython = False
  
@@ -22,9 +22,7 @@
 +        else:
 +            lib_pre = 'lib'
 +            lib_ext = '.a'
-+        # -Bsymbolic needed to ensure MKL FFT routines don't shadow FFTW ones.
-+        # see:  https://github.com/pyFFTW/pyFFTW/issues/40
-+        extra_link_args = ['-Wl,-Bsymbolic']
++        extra_link_args = []
 +        for lib in common_extension_args['libraries']:
 +            extra_link_args.append(
 +                os.path.join(static_fftw_path, lib_pre + lib + lib_ext))
