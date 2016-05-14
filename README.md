@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pyfftw-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/pyfftw-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/pyfftw-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pyfftw-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pyfftw-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pyfftw-feedstock/branch/master)
