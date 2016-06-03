@@ -8,7 +8,7 @@ export STATIC_FFTW_DIR=$PREFIX/lib
 if [[`uname` == 'Linux' ]]; then
     # -Bsymbolic link flag to ensure MKL FFT routines don't shadow FFTW ones.
     # see:  https://github.com/pyFFTW/pyFFTW/issues/40
-    export CFLAGS=-Wl,-Bsymbolic
+    export CFLAGS="$CFLAGS -Wl,-Bsymbolic"
 fi
 
 $PYTHON setup.py build
