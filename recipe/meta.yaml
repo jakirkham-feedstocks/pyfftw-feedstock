@@ -20,11 +20,27 @@ requirements:
     build:
         - cython
         - python
-        - numpy x.x
+        - mkl    11.3.3  0
+        - numpy  x.x
+        - numpy  1.10.4  py27_2  # [py27 and np==110]
+        - numpy  1.11.0  py27_1  # [py27 and np==111]
+        - numpy  1.11.0  py27_1  # [py27 and np==111]
+        - numpy  1.10.4  py34_2  # [py34 and np==110]
+        - numpy  1.11.0  py34_1  # [py34 and np==111]
+        - numpy  1.10.4  py35_2  # [py35 and np==110]
+        - numpy  1.11.0  py35_1  # [py35 and np==111]
         - fftw
     run:
         - python
-        - numpy x.x
+        - mkl    11.3.3  0
+        - numpy  x.x
+        - numpy  1.10.4  py27_2  # [py27 and np==110]
+        - numpy  1.11.0  py27_1  # [py27 and np==111]
+        - numpy  1.11.0  py27_1  # [py27 and np==111]
+        - numpy  1.10.4  py34_2  # [py34 and np==110]
+        - numpy  1.11.0  py34_1  # [py34 and np==111]
+        - numpy  1.10.4  py35_2  # [py35 and np==110]
+        - numpy  1.11.0  py35_1  # [py35 and np==111]
 
 test:
     requires:
