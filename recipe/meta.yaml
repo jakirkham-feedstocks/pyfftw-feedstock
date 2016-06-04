@@ -25,7 +25,6 @@ requirements:
     run:
         - python
         - numpy x.x
-        - fftw
 
 test:
     imports:
