@@ -19,11 +19,11 @@ requirements:
     build:
         - cython
         - python
-        - numpy
+        - numpy x.x
         - fftw
     run:
         - python
-        - numpy
+        - numpy x.x
 
 test:
     imports:
