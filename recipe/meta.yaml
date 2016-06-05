@@ -6,8 +6,10 @@ package:
 
 source:
     fn: pyFFTW-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
-    md5: 20c0f3bb8153e7a4ab8bcbfe286248e8
+    # url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
+    # md5: 20c0f3bb8153e7a4ab8bcbfe286248e8
+    url: https://github.com/pyFFTW/pyFFTW/archive/v10.2.tar.gz
+    md5: f44c0eea45daf20a2697f031b4590709
 
 build:
   number: 0
@@ -17,11 +19,11 @@ requirements:
     build:
         - cython
         - python
-        - numpy x.x
+        - numpy
         - fftw
     run:
         - python
-        - numpy x.x
+        - numpy
 
 test:
     imports:
