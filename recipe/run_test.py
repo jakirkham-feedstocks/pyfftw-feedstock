@@ -1,6 +1,6 @@
-
 import numpy as np
 
+import pyfftw.builders
 from pyfftw.interfaces.numpy_fft import fftn
 r = np.random.randn(32, 32, 32)
 
