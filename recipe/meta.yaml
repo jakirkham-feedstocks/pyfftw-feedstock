@@ -1,4 +1,4 @@
-{% set version = "0.10.1" %}
+{% set version = "0.10.3" %}
 
 package:
     name: pyfftw
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: pyFFTW-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
-    md5: dab57de9d23f3b333115265914f3d240
+    url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
+    md5: c6fb7a98b413ba242ce0db93c02e98a6
 
 build:
   number: 0
@@ -19,17 +19,9 @@ requirements:
         - python
         - numpy x.x
         - fftw
-
     run:
         - python
         - numpy x.x
-        - fftw
-
-test:
-    imports:
-        - pyfftw
-        - pyfftw.builders
-        - pyfftw.interfaces
 
 about:
     home: http://hgomersall.github.com/pyFFTW/
@@ -38,5 +30,6 @@ about:
 
 extra:
     recipe-maintainers:
+        - grlee77
         - jakirkham
         - jjhelmus
