@@ -1,4 +1,4 @@
-{% set version = "0.10.3" %}
+{% set version = "0.10.4" %}
 
 package:
     name: pyfftw
@@ -7,7 +7,7 @@ package:
 source:
     fn: pyFFTW-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
-    md5: c6fb7a98b413ba242ce0db93c02e98a6
+    md5: 7fb59450308881bb48d9f178947d950e
 
 build:
   number: 0
