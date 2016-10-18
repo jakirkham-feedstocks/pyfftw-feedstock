@@ -1,13 +1,15 @@
+{% set name = "pyFFTW" %}
 {% set version = "0.10.4" %}
+{% set sha256 = "739b436b7c0aeddf99a48749380260364d2dc027cf1d5f63dafb5f50068ede1a" %}
 
 package:
-    name: pyfftw
+    name: {{ name|lower }}
     version: {{ version }}
 
 source:
-    fn: pyFFTW-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
-    sha256: 739b436b7c0aeddf99a48749380260364d2dc027cf1d5f63dafb5f50068ede1a
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
   number: 0
