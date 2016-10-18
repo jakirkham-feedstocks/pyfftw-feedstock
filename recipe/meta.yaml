@@ -7,7 +7,7 @@ package:
 source:
     fn: pyFFTW-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
-    md5: 7fb59450308881bb48d9f178947d950e
+    sha256: 739b436b7c0aeddf99a48749380260364d2dc027cf1d5f63dafb5f50068ede1a
 
 build:
   number: 0
