@@ -19,6 +19,7 @@ requirements:
     build:
         - cython
         - python
+        - setuptools
         - numpy x.x
         - fftw
     run:
