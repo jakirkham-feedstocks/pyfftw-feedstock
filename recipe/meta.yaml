@@ -1,22 +1,26 @@
+{% set name = "pyFFTW" %}
 {% set version = "0.10.4" %}
+{% set sha256 = "739b436b7c0aeddf99a48749380260364d2dc027cf1d5f63dafb5f50068ede1a" %}
 
 package:
-    name: pyfftw
+    name: {{ name|lower }}
     version: {{ version }}
 
 source:
-    fn: pyFFTW-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/p/pyFFTW/pyFFTW-{{ version }}.tar.gz
-    md5: 7fb59450308881bb48d9f178947d950e
+    fn: {{ name }}-{{ version }}.tar.gz
+    url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+    sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
     build:
+        - toolchain
         - cython
         - python
+        - setuptools
         - numpy x.x
         - fftw
     run:
@@ -26,7 +30,8 @@ requirements:
 about:
     home: http://hgomersall.github.com/pyFFTW/
     license: BSD or GPL 2
-    summary: 'A pythonic wrapper around FFTW, the FFT library, presenting a unified interface for all the supported transforms.'
+    license_file: LICENSE.txt
+    summary: A pythonic wrapper around FFTW, the FFT library, presenting a unified interface for all the supported transforms.
 
 extra:
     recipe-maintainers:
