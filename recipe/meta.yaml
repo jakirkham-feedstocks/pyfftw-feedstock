@@ -31,6 +31,19 @@ requirements:
     - numpy >=1.9  # [win and py35]
     - numpy >=1.11  # [win and py36]
 
+outputs:
+  - name: {{ PKG_NAME }}
+    type: conda
+  - type: wheel
+    build:
+      activate_in_script: true
+    requirements:
+      build:
+        - python
+        - cython
+        - setuptools
+        - numpy
+
 about:
   home: http://hgomersall.github.com/pyFFTW/
   license: BSD or GPL 2
