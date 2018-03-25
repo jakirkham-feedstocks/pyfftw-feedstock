@@ -59,7 +59,7 @@ conda install --yes --quiet conda-forge-ci-setup=1
 source run_conda_forge_build_setup
 
 conda build /home/conda/recipe_root -m /home/conda/feedstock_root/.ci_support/${CONFIG}.yaml --quiet || exit 1
-upload_or_check_non_existence /home/conda/recipe_root conda-forge --channel=main -m /home/conda/feedstock_root/.ci_support/${CONFIG}.yaml || exit 1
+upload_or_check_non_existence /home/conda/recipe_root conda-forge --channel=test -m /home/conda/feedstock_root/.ci_support/${CONFIG}.yaml || exit 1
 
 touch /home/conda/feedstock_root/build_artifacts/conda-forge-build-done
 EOF
